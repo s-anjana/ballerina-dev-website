@@ -1,14 +1,17 @@
 ---
-layout: ballerina-inner-page
-title: How to Publish a Module
+layout: ballerina-left-nav-pages
+title: How to Publish Modules
+description: Learn how to use the CLI tool in the Ballerina programming language to push modules to Ballerina Central.
+keywords: ballerina, programming language, ballerina central, ballerina modules
 permalink: /learn/how-to-publish-modules/
+active: how-to-publish-modules
 redirect_from:
   - /learn/how-to-publish-modules
   - /v1-2/learn/how-to-publish-modules
   - /v1-2/learn/how-to-publish-modules/
 ---
 
-# How to Publish a Module
+# How to Publish Modules
 
 ## CLI Command
 

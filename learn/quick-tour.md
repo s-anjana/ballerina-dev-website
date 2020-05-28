@@ -1,7 +1,10 @@
 ---
 layout: ballerina-inner-page
-title: Quick Tour
+title: Ballerina Quick Tour
+description: A quick tour of the Ballerina programming language, including writing, running and invoking an HTTP service and using a client to interact with a service.
+keywords: ballerina, quick tour, programming language, http service
 permalink: /learn/quick-tour/
+active: quick-tour
 redirect_from:
   - /learn/quick-tour
   - /v1-2/learn/quick-tour
@@ -20,7 +23,7 @@ Now, that you know a little bit of Ballerina, let's take it for a spin!
 
 ## Write a Service, Run It, and Invoke It
 
-Write a simple Hello World service in a file with the `.bal` extension.
+Write a simple Hello World HTTP service in a file with the `.bal` extension.
 
 ```ballerina
 import ballerina/http;
@@ -184,4 +187,4 @@ Star [GitHub repo](https://github.com/ballerina-platform/ballerina-lang) and sho
 
 Now, that you have taken Ballerina around for a quick tour, you can explore Ballerina more.
 
-* Go through [Ballerina by Example](/learn/by-example) to learn Ballerina incrementally with commented examples that cover every nuance of the syntax.
+* Go through the [Ballerina by Examples](/learn/by-example) to learn Ballerina incrementally with commented examples that cover every nuance of the syntax.

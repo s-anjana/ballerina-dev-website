@@ -1,14 +1,15 @@
 ---
-layout: ballerina-inner-page
+layout: ballerina-left-nav-pages
 title: Run and debug
 permalink: /learn/vscode-plugin/run-and-debug/
+active: run-and-debug
 redirect_from:
   - /v1-2/learn/tools-ides/vscode-plugin/run-and-debug
   - /v1-2/learn/tools-ides/vscode-plugin/run-and-debug/
   - /learn/tools-ides/vscode-plugin/run-and-debug/
   - /learn/tools-ides/vscode-plugin/run-and-debug
   - /v1-2/learn/vscode-plugin/run-and-debug/
-  - /learn/vscode-plugin/run-and-debug
+  - /v1-2/learn/vscode-plugin/run-and-debug
 ---
 
 # Run and debug
@@ -42,4 +43,4 @@ For more information on debugging your code using VS Code, go to [VS Code Docume
 ## What's next?
 
  - For information on the next capability of the VS Code Ballerina extension, see [Graphical View](/learn/vscode-plugin/graphical-editor).
- - For information on the VS Code Ballerina extension, see [The Visual Studio Code Extension](/learn/vscode-plugin).
+ - For information on the VS Code Ballerina extension, see [The Visual Studio Code Ballerina Extension](/learn/vscode-plugin).

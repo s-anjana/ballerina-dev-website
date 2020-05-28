@@ -1,7 +1,10 @@
 ---
-layout: ballerina-inner-page
+layout: ballerina-left-nav-pages
 title: How to Test Ballerina Code
+description: Learn how to use Ballerina's built-in test framework to write testable code. The test framework provides a set of building blocks to help write and run tests.
+keywords: ballerina, programming language, testing
 permalink: /learn/how-to-test-ballerina-code/
+active: how-to-test-ballerina-code
 redirect_from:
   - /learn/how-to-test-ballerina-code
   - /v1-2/learn/how-to-test-ballerina-code

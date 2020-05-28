@@ -1,13 +1,15 @@
 ---
-layout: ballerina-inner-page
+layout: ballerina-left-nav-pages
 title: Using the features of the IntelliJ plugin
-permalink: /learn/intellij-plugin/using-intellij-plugin-features
+permalink: /learn/intellij-plugin/using-intellij-plugin-features/
+active: using-intellij-plugin-features
 redirect_from:
   - /v1-2/learn/tools-ides/intellij-plugin/using-intellij-plugin-features
   - /v1-2/learn/tools-ides/intellij-plugin/using-intellij-plugin-features/
   - /learn/tools-ides/intellij-plugin/using-intellij-plugin-features
   - /learn/tools-ides/intellij-plugin/using-intellij-plugin-features/
   - /v1-2/learn/intellij-plugin/using-intellij-plugin-features/
+  - /v1-2/learn/intellij-plugin/using-intellij-plugin-features
 ---
 
 # Using the features of the IntelliJ plugin
@@ -178,5 +180,5 @@ This option allows you to view the definition of a selected variable, function, 
 
 ## What's next?
 
-- For more information on the Ballerina IntelliJ IDEA plugin, see [IntelliJ IDEA Plugin](/learn/intellij-plugin).
-- For information on all the tools and IDEs that are supported by Ballerina, see [Learn](/v1-2/learn).
+- For more information on the IntelliJ IDEA Ballerina plugin, see [IntelliJ IDEA Ballerina Plugin](/learn/intellij-plugin).
+- For information on all the tools and IDEs that are supported by Ballerina, see [Setting up Ballerina](/learn/installing-ballerina/).

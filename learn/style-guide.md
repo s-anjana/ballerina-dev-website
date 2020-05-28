@@ -1,7 +1,10 @@
 ---
-layout: ballerina-inner-page
-title: Ballerina Style Guide
+layout: ballerina-left-nav-pages
+title: Style Guide
+description: The Ballerina Style Guide aims at maintaining a standard coding style among the Ballerina community. The Ballerina code formatting tools are based on this guide.
+keywords: ballerina, programming language, ballerina style guide
 permalink: /learn/style-guide/
+active: style-guide
 redirect_from:
   - /learn/style-guide
   - /v1-2/learn/style-guide

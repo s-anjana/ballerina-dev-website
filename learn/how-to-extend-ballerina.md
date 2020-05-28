@@ -1,7 +1,10 @@
 ---
-layout: ballerina-inner-page
+layout: ballerina-left-nav-pages
 title: How to Extend Ballerina
+description: Learn how to extend Ballerina using annotations, which can be used to provide structured metadata about a particular construct.
+keywords: ballerina, programming language, annotations, metadata, extend ballerina
 permalink: /learn/how-to-extend-ballerina/
+active: how-to-extend-ballerina
 redirect_from:
   - /learn/how-to-extend-ballerina
   - /v1-2/learn/how-to-extend-ballerina

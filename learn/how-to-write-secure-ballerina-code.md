@@ -1,7 +1,10 @@
 ---
-layout: ballerina-inner-page
+layout: ballerina-left-nav-pages
 title: How to Write Secure Ballerina Programs
+description: Check out the different security features and controls available within the Ballerina programming language and follow the guidelines on writing secure Ballerina programs.
+keywords: ballerina, programming language, security, secure ballerina code
 permalink: /learn/how-to-write-secure-ballerina-code/
+active: how-to-write-secure-ballerina-code
 redirect_from:
   - /learn/how-to-write-secure-ballerina-code
   - /v1-2/learn/how-to-write-secure-ballerina-code
