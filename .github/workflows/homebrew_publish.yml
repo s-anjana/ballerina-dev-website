@@ -11,7 +11,27 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+        GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
     steps:
+      - name: Clone s-anjana/homebrew-core repo #TODO: change s-anjana to ballerina-bot
+        run: git clone https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git #TODO: change s-anjana to ballerina-bot
+
+      - name: Synch local homebrow-core repo with remote upstream
+        run: |
+          cd homebrew-core
+          git pull origin master
+          
+          git config --global user.email "github+test@anjana.lk"
+          git config --global user.name "s-anjana"
+
+          git remote add upstream https://github.com/Homebrew/homebrew-core.git
+          git pull upstream master --no-edit
+
+          git push --set-upstream origin master
+          echo 'Successfully pushed to s-anjana/homebrew-core branch'
+
+
       - name: Install jq for json manipulation
         run: sudo apt-get install jq
 
