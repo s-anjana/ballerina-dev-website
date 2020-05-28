@@ -4,7 +4,7 @@ name: Publish Homebrew
 on:
   push:
     branches:
-      - prod-sync
+      - prod-sync-homebrew # TODO: change to prod-sync
     paths:
       - '_data/latest/**'
 
