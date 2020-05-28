@@ -25,7 +25,7 @@ jobs:
           git config --global user.email "github+test@anjana.lk"
           git config --global user.name "s-anjana"
 
-          git remote add upstream https://github.com/Homebrew/homebrew-core.git
+          git remote add upstream https://github.com/iHomebrew/homebrew-core.git
           git pull upstream master --no-edit
 
           git push --set-upstream origin master
