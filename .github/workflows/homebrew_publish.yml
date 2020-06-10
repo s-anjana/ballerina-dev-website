@@ -26,9 +26,12 @@ jobs:
           git config --global user.name "s-anjana"
 
           git remote add upstream https://github.com/iHomebrew/homebrew-core.git
-          git pull upstream master --no-edit
+          
+          git fetch upstream
+          git checkout master
+          git reset --hard upstream/master
+          git push origin master --force'
 
-          git push --set-upstream origin master
           echo 'Successfully pushed to s-anjana/homebrew-core branch'
 
 
