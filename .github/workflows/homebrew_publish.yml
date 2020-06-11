@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
         GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
+        REPOSITORY: https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git
     steps:
       - name: Clone s-anjana/homebrew-core repo #TODO: change s-anjana to ballerina-bot
-        run: git clone https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git #TODO: change s-anjana to ballerina-bot
+        run: git clone $REPOSITORY #TODO: change s-anjana to ballerina-bot
 
       - name: Synch local homebrow-core repo with remote upstream
         run: |
@@ -41,7 +42,7 @@ jobs:
           git reset --hard upstream/master
           echo 'git reset --hard upstream/master success'
 
-          git push origin master --force
+          git push $REPOSITORY --all --force
 
           echo 'Successfully pushed to s-anjana/homebrew-core branch'
 
