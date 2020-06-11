@@ -33,10 +33,16 @@ jobs:
           git remote add upstream https://github.com/iHomebrew/homebrew-core.git
           echo 'git remote add upstream success'
           
-          git pull upstream master -X theirs --no-edit
-          echo 'git pull upstream master -X theirs --no-edit success'
+          git fetch upstream
+          echo 'git fetch upstream success'
 
-          git push https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git --all
+          git checkout master
+          echo 'git checkout master success'
+
+          git reset --hard upstream/master
+          echo 'git reset --hard upstream/master success'
+
+          git push origin master --force
 
           echo 'Successfully pushed to s-anjana/homebrew-core branch'
 
