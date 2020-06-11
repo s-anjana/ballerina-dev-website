@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
         GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
+        GH_EMAIL: ${{ secrets.GH_EMAIL }}
     steps:
       - name: Clone s-anjana/homebrew-core repo #TODO: change s-anjana to ballerina-bot
-        run: git clone https://s-anjana:${{ secrets.WEBSITE_TOKEN }}@github.com/s-anjana/homebrew-core.git #TODO: change s-anjana to ballerina-bot
+        run: git clone https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git #TODO: change s-anjana to ballerina-bot
 
       - name: Synch local homebrow-core repo with remote upstream
         run: |
@@ -24,7 +25,7 @@ jobs:
 
           echo 'git pull origin master successful'
           
-          git config --global user.email "github+test@anjana.lk"
+          git config --global user.email "$GH_EMAIL"
           git config --global user.name "s-anjana"
 
           echo 'git config success'
@@ -41,7 +42,7 @@ jobs:
           git reset --hard upstream/master
           echo 'git reset --hard upstream/master success'
 
-          git push https://s-anjana:${{ secrets.WEBSITE_TOKEN }}@github.com/s-anjana/homebrew-core.git --all
+          git push origin master --force
 
           echo 'Successfully pushed to s-anjana/homebrew-core branch'
 
