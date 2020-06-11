@@ -33,14 +33,8 @@ jobs:
           git remote add upstream https://github.com/iHomebrew/homebrew-core.git
           echo 'git remote add upstream success'
           
-          git fetch upstream
-          echo 'git fetch upstream success'
-
-          git checkout master
-          echo 'git checkout master success'
-
-          git reset --hard upstream/master
-          echo 'git reset --hard upstream/master success'
+          git pull upstream master -X theirs --no-edit
+          echo 'git pull upstream master -X theirs --no-edit success'
 
           git push origin master --force
 
