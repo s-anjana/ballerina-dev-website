@@ -36,7 +36,7 @@ jobs:
           git pull upstream master -X theirs --no-edit
           echo 'git pull upstream master -X theirs --no-edit success'
 
-          git push origin master --force
+          git push https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git --all
 
           echo 'Successfully pushed to s-anjana/homebrew-core branch'
 
