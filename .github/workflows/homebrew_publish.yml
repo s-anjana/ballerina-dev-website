@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
-        REPOSITORY: https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git
+        REPOSITORY: https://s-anjana:${{ secrets.WEBSITE_TOKEN }}@github.com/s-anjana/homebrew-core.git
     steps:
       - name: Clone s-anjana/homebrew-core repo #TODO: change s-anjana to ballerina-bot
         run: git clone $REPOSITORY #TODO: change s-anjana to ballerina-bot
