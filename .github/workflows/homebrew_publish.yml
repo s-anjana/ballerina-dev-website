@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
         GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
-        GH_EMAIL: ${{ secrets.GH_EMAIL }}
     steps:
       - name: Clone s-anjana/homebrew-core repo #TODO: change s-anjana to ballerina-bot
         run: git clone https://s-anjana:$GITHUB_TOKEN@github.com/s-anjana/homebrew-core.git #TODO: change s-anjana to ballerina-bot
