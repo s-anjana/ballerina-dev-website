@@ -23,7 +23,7 @@ jobs:
           cd homebrew-core
           git pull origin master
           
-          git config --global user.email "$GH_EMAIL"
+          git config --global user.email "ballerina+bot@anjana.lk"
           git config --global user.name "s-anjana"
 
           git remote add upstream https://github.com/iHomebrew/homebrew-core.git
