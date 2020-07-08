@@ -9,7 +9,7 @@ on:
       - '_data/latest/**'
 
 jobs:
-  publish:
+  publish-homebrew:
     runs-on: ubuntu-latest
     env:
         GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
