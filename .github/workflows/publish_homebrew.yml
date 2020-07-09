@@ -15,7 +15,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
     steps:
       - name: Clone ballerina-bot/homebrew-core repo 
-        run: git clone https://sanjana:$GITHUB_TOKEN@github.com/ballerina-bot/homebrew-core.git
+        run: git clone https://sanjana:$GITHUB_TOKEN@github.com/sanjana/homebrew-core.git
 
       - name: Synch local homebrow-core repo with remote upstream
         run: |
