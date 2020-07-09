@@ -4,7 +4,7 @@ name: Publish Homebrew
 on:
   push:
     branches:
-      - prod-sync
+      - homebrew-prod-sync
     paths:
       - '_data/stable-latest/**'
 
@@ -15,15 +15,15 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.WEBSITE_TOKEN }}
     steps:
       - name: Clone ballerina-bot/homebrew-core repo 
-        run: git clone https://ballerina-bot:$GITHUB_TOKEN@github.com/ballerina-bot/homebrew-core.git
+        run: git clone https://sanjana:$GITHUB_TOKEN@github.com/ballerina-bot/homebrew-core.git
 
       - name: Synch local homebrow-core repo with remote upstream
         run: |
           cd homebrew-core
           git pull origin master
           
-          git config --global user.email "ballerina+bot@ballerina.org"
-          git config --global user.name "ballerina-bot"
+          git config --global user.email "hello@anjana.lk"
+          git config --global user.name "sanjana"
 
           git remote add upstream https://github.com/Homebrew/homebrew-core.git
           
